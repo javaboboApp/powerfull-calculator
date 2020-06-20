@@ -43,7 +43,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/screen_ctn">
 
-
+        <RelativeLayout
+            android:id="@+id/btns_ctn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="start">
 
 
             <!-- other line-->
@@ -55,44 +60,34 @@
 
             <Button
                 android:id="@+id/btn_seven"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/seven"
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="309dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_eight"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_seven"
 
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/eight"
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="309dp"
-                tools:layout_editor_absoluteX="100dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_nine"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_eight"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/nine"
 
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="309dp"
-                tools:layout_editor_absoluteX="200dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
 
             <!--end of the line-->
@@ -100,45 +95,38 @@
 
             <Button
                 android:id="@+id/btn_four"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_seven"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/_4"
 
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="415dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_five"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_seven"
+                android:layout_toRightOf="@+id/btn_four"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/_5"
 
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="415dp"
-                tools:layout_editor_absoluteX="100dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_nine"
+                android:layout_toRightOf="@+id/btn_five"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/_6"
 
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="415dp"
-                tools:layout_editor_absoluteX="200dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
 
             <!--end of the line-->
@@ -146,46 +134,39 @@
 
             <Button
                 android:id="@+id/btn_one"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_four"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
 
                 android:text="@string/_1"
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="520dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_two"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_five"
+                android:layout_toRightOf="@+id/btn_one"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
 
 
                 android:text="@string/_2"
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="520dp"
-                tools:layout_editor_absoluteX="100dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_three"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_6"
+                android:layout_toRightOf="@+id/btn_two"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
 
                 android:text="@string/_3"
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="520dp"
-                tools:layout_editor_absoluteX="200dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
 
             <!--end of the line-->
@@ -195,132 +176,114 @@
 
             <Button
                 android:id="@+id/btn_."
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_one"
                 android:background="@color/btn_background"
                 android:minWidth="38dp"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/point"
 
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="626dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
 
             <Button
                 android:id="@+id/btn_cero"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_two"
+                android:layout_toRightOf="@+id/btn_."
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
 
                 android:text="@string/cero"
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="626dp"
-                tools:layout_editor_absoluteX="100dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
 
             <Button
                 android:id="@+id/btn_equal"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_three"
+                android:layout_toRightOf="@+id/btn_cero"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn"
                 android:text="@string/equal"
 
-                android:textSize="@dimen/btn_size"
-                tools:layout_conversion_absoluteHeight="106dp"
-                tools:layout_editor_absoluteY="626dp"
-                tools:layout_editor_absoluteX="200dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/btn_size" />
             <!--end of the line-->
+        </RelativeLayout>
 
-
-
+        <RelativeLayout
+            android:id="@+id/op_ctn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btns_ctn"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btns_ctn">
 
             <ImageButton
                 android:id="@+id/btn_ce"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn_op"
-                android:src="@drawable/ic_baseline_backspace_24"
-                tools:layout_conversion_absoluteHeight="72dp"
-                tools:layout_editor_absoluteY="309dp"
-                tools:layout_editor_absoluteX="301dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:src="@drawable/ic_baseline_backspace_24" />
 
             <Button
                 android:id="@+id/btn_div"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/btn_ce"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn_op"
                 android:text="@string/div"
                 android:textColor="@color/colo_lateral_op"
-                android:textSize="@dimen/dim_op"
-                tools:layout_conversion_absoluteHeight="80dp"
-                tools:layout_editor_absoluteY="381dp"
-                tools:layout_editor_absoluteX="301dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/dim_op" />
 
             <Button
                 android:id="@+id/btn_mul"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_div"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn_op"
                 android:text="@string/mult"
                 android:textColor="@color/colo_lateral_op"
-                android:textSize="@dimen/dim_op"
-                tools:layout_conversion_absoluteHeight="80dp"
-                tools:layout_editor_absoluteY="462dp"
-                tools:layout_editor_absoluteX="301dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/dim_op" />
 
             <Button
                 android:id="@+id/btn_minus"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_mul"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn_op"
                 android:text="@string/minus"
                 android:textColor="@color/colo_lateral_op"
 
-                android:textSize="@dimen/dim_op"
-                tools:layout_conversion_absoluteHeight="80dp"
-                tools:layout_editor_absoluteY="542dp"
-                tools:layout_editor_absoluteX="301dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/dim_op" />
 
             <Button
                 android:id="@+id/btn_plus"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/w_btn"
                 android:layout_height="match_parent"
+                android:layout_below="@+id/btn_minus"
                 android:background="@color/btn_background"
                 android:padding="@dimen/padding_btn_op"
                 android:text="@string/plus"
                 android:textColor="@color/colo_lateral_op"
 
-                android:textSize="@dimen/dim_op"
-                tools:layout_conversion_absoluteHeight="109dp"
-                tools:layout_editor_absoluteY="622dp"
-                tools:layout_editor_absoluteX="301dp"
-                tools:layout_conversion_absoluteWidth="100dp" />
+                android:textSize="@dimen/dim_op" />
 
-
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
-            tools:layout_conversion_absoluteHeight="422dp"
-            tools:layout_editor_absoluteY="309dp"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_conversion_absoluteWidth="329dp">
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/btns_ctn"
+            android:layout_alignBottom="@+id/btns_ctn"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_blue_dark">
 
             <TextView
                 android:id="@+id/open_more_opt"
