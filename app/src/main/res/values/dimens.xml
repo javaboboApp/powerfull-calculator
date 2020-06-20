@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_size">36dp</dimen>
+    <dimen name="w_btn">100dp</dimen>
+    <dimen name="dim_op">24sp</dimen>
+    <dimen name="padding_btn">28dp</dimen>
+    <dimen name="padding_btn_op">24dp</dimen>
+    <dimen name="open_more_opt_dimen">24sp</dimen>
+</resources>
